@@ -1,5 +1,5 @@
 {
-  "name": "clarity-devtools",
+  "name": "@selego/clarity-devtools",
   "version": "0.6.22",
   "private": true,
   "description": "Adds Clarity debugging support to browser devtools",

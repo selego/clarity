@@ -1,5 +1,5 @@
 {
-  "name": "clarity-visualize",
+  "name": "@selego/clarity-visualize",
   "version": "0.6.22",
   "description": "An analytics library that uses web page interactions to generate aggregated insights",
   "author": "Microsoft Corp.",
