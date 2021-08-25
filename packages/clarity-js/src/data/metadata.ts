@@ -143,6 +143,7 @@ function session(): Session {
       output.upload = parts.length >= 6 ? `${Constant.HTTPS}${parts[5]}/${parts[4]}` : `${Constant.HTTPS}${parts[4]}`;
     }
   }
+  console.log("SESSION ID ", output.session)
   return output;
 }
 
@@ -179,6 +180,7 @@ function user(): User {
     // Get user id from cookie only if we tracking is enabled, otherwise fallback to a random id
     output.id = config.track ? parts[0] : output.id;
   }
+  console.log("USER ID ", output.id)
   return output;
 }
 
