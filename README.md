@@ -33,3 +33,9 @@ If you haven't already done so, start contributing by following instructions **[
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
 Happy coding!
+
+## Update
+
+ - To update the version of all packages: `yarn run version <version>`
+ - To build all the packages: `yarn build`
+ - To publish to NPM: go in on package and then `npm publish --access public`
