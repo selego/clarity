@@ -132,6 +132,9 @@ function shortid(): string {
 function session(): Session {
   let output: Session = { session: shortid(), ts: Math.round(Date.now()), count: 1, upgrade: null, upload: Constant.Empty };
   let value = getCookie(Constant.SessionKey);
+
+  console.log("Value Session cookie", value)
+
   if (value) {
     let parts = value.split(Constant.Pipe);
     // Making it backward & forward compatible by using greater than comparison (v0.6.21)
@@ -154,6 +157,10 @@ function num(string: string, base: number = 10): number {
 function user(): User {
   let output: User = { id: shortid(), expiry: null, consent: BooleanFlag.False };
   let cookie = getCookie(Constant.CookieKey);
+
+  console.log("Value user cookie ", cookie)
+
+
   if(cookie && cookie.length > 0) {
     // Splitting and looking up first part for forward compatibility, in case we wish to store additional information in a cookie
     let parts = cookie.split(Constant.Pipe);
