@@ -1,6 +1,6 @@
 {
   "name": "@selego/clarity-devtools",
-  "version": "0.6.23-1",
+  "version": "0.6.23-2",
   "private": true,
   "description": "Adds Clarity debugging support to browser devtools",
   "author": "Microsoft Corp.",
@@ -24,9 +24,9 @@
     "url": "https://github.com/Microsoft/clarity/issues"
   },
   "dependencies": {
-    "@selego/clarity-decode": "^0.6.23-1",
-    "@selego/clarity-js": "^0.6.23-1",
-    "@selego/clarity-visualize": "^0.6.23-1"
+    "@selego/clarity-decode": "^0.6.23-2",
+    "@selego/clarity-js": "^0.6.23-2",
+    "@selego/clarity-visualize": "^0.6.23-2"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^13.0.2",
