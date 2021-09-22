@@ -91,7 +91,6 @@ function reset(envelope: Data.Envelope): void {
     iframe.title = "Clarity Developer Tools";
     iframe.setAttribute("scrolling", "no");
     document.body.appendChild(iframe);
-    console.log("Clearing out previous session... moving on to next one.");
     if (sessionId !== envelope.sessionId) {
         eJson = [];
         sessionId = envelope.sessionId;
