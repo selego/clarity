@@ -12,13 +12,13 @@ export function start(): void {
         "connection" in navigator &&
         "downlink" in navigator["connection"] &&
         typeof navigator["connection"]["downlink"] === "number") {
-        (navigator["connection"] as NavigatorConnection).addEventListener("change", recompute);
+        (navigator["connection"] as unknown as NavigatorConnection).addEventListener("change", recompute);
         recompute();
     }
 }
 
 function recompute(): void {
-    let connection = navigator["connection"] as NavigatorConnection;
+    let connection = navigator["connection"] as unknown as NavigatorConnection;
     data = {
         downlink: connection.downlink,
         rtt: connection.rtt,
